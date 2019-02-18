@@ -10,6 +10,7 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'prevue-image.js',
     library: 'PrevueImage',
+    libraryExport: 'default',
     libraryTarget: 'umd'
   },
   module: {
