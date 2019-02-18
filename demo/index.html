@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      img {
+        width: 300px;
+        cursor: zoom-in;
+      }
+    </style>
   </head>
   <body>
     <div id="app" v-prevue-image>
-      <img src="http://placekitten.com/408/287" alt="" />
+      <div style="text-align: center">
+        <img src="http://placekitten.com/800/500" alt="" />
+        <img src="http://placekitten.com/800/500" alt="" />
+      </div>
+      <div style="text-align: center">
+        <img src="http://placekitten.com/800/600" alt="" />
+        <img src="http://placekitten.com/800/600" alt="" />
+      </div>
     </div>
     <script src="../node_modules/vue/dist/vue.js"></script>
     <script src="../dist/prevue-image.js"></script>
