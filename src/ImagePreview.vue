@@ -14,7 +14,7 @@ export default {
   name: "ImagePreview",
   props: {
     img: {
-      type: process.browser && HTMLImageElement,
+      type: HTMLImageElement,
       required: true
     }
   },

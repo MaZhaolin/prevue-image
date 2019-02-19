@@ -1,16 +1,17 @@
 {
   "name": "prevue-image",
   "description": "Vue.js Image Preview Library",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "InsertSweat",
   "private": false,
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress --hide-modules"
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js"
   },
-  "main": "dist/prevue-image.js",
+  "main": "dist/prevue-image.esm.js",
   "files": [
     "src/*.js",
     "dist/*.js"
@@ -32,24 +33,13 @@
     "vue": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "babel-loader": "^8.0.5",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.7.0",
-    "babel-preset-latest": "^6.24.1",
-    "cross-env": "^5.2.0",
-    "css-loader": "^2.1.0",
-    "file-loader": "^3.0.1",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "style-loader": "^0.23.1",
-    "vue": "^2.6.6",
-    "vue-loader": "^15.6.2",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.6",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14"
+    "rollup": "^0.59.4",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-uglify-es": "^0.0.1",
+    "rollup-plugin-vue": "^4.7.1",
+    "rollup-watch": "^4.3.1",
+    "vue": "^2.6.6"
   }
 }

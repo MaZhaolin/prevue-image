@@ -7,9 +7,10 @@ export default {
         el.addEventListener('click', function({ target }) {
           if (target.tagName === 'IMG') {
             const box = document.createElement('div')
+            const props = { img: target }
             const ins = new Vue({
               el: box,
-              render: h => <ImagePreview img={target} />
+              render: h => <ImagePreview {...{ props }} />
             })
             document.body.appendChild(ins.$el)
           }
