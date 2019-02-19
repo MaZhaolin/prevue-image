@@ -22,10 +22,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/insertSweat/prevue-image.git"
+    "url": "https://github.com/MaZhaolin/prevue-image.git"
   },
   "bugs": {
-    "url": "https://github.com/insertSweat/prevue-image/issues"
+    "url": "https://github.com/MaZhaolin/prevue-image/issues"
   },
   "license": "MIT",
   "peerDependencies": {
