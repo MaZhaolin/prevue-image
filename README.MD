@@ -46,3 +46,7 @@ html
   })
 </script>
 ```
+
+### License
+
+The MIT License (MIT). Please see [License File](https://github.com/mazhaolin/prevue-image/blob/master/LICENSE.MD) for more information.
