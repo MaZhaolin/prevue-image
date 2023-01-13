@@ -36,7 +36,7 @@ export default {
       overflow: "hidden",
       paddingRight: hasScrollbar() ? `${scrollbarWidth}px` : null
     });
-    const scale = img.offsetHeight / img.offsetWidth;
+    const scale = img.naturalHeight / img.naturalWidth;
     const naturalWidth =
       img.naturalWidth > body.offsetWidth - 100
         ? body.offsetWidth - 100
